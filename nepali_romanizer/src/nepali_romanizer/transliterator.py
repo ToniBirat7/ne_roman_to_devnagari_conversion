@@ -598,6 +598,7 @@ def transliterate_word(word: str, context: dict = None) -> str:
         'u': 'ऊ',
         'nepal': 'नेपाल',
         'nepali': 'नेपाली',
+        'kehi': 'केही',
         'sabai': 'सबै',
         'dherai': 'धेरै',
     }
