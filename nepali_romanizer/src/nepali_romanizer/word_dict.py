@@ -1,6 +1,13 @@
 """Auto-generated word dictionary from dataset analysis (Frequency Based)."""
 
 WORD_DICT = {
+    # Manual corrections
+    'bastavma': 'वास्तवमा',
+    'tarkari': 'तरकारी',
+    'phalaphul': 'फलफूल',
+    'bhai': 'भाइ',
+    'bahini': 'बहिनी',
+    
     '*': '*',
     '+': '+',
     '-': '-',
@@ -18049,7 +18056,7 @@ WORD_DICT = {
     'parchale': 'पार्छले',
     'parchama': 'पार्छमा',
     'parchasanga': 'पार्छसँग',
-    'parchha': 'पार्छ',
+    'parchha': 'पर्छ',
     'parchhabata': 'पार्छबाट',
     'parchhaharu': 'पार्छहरू',
     'parchhaka': 'पार्छका',
@@ -18435,7 +18442,7 @@ WORD_DICT = {
     'parnale': 'पार्नले',
     'parnama': 'पार्नमा',
     'parnasanga': 'पार्नसँग',
-    'parne': 'पार्ने',
+    'parne': 'पर्ने',
     'parnebata': 'पार्नेबाट',
     'parneharu': 'पार्नेहरू',
     'parneka': 'पार्नेका',

@@ -1,9 +1,5 @@
-Accuracy: 462/935 = 49.41%
+Accuracy: 459/935 = 49.09%
 
-[0] Roman: Ma bajaarma kehi tarkari ra phalaphul kinna jaandai chhu.
-  Expected: म बजारमा केही तरकारी र फलफूल किन्न जाँदैछु।
-  Got:      म बजारमा केही तर्करी र फलफुल किन्न जाँदै छु।
-----------------------------------------
 [6] Roman: Ma hijo Nepal aaipugeko hun ra ma dui hapta basne yojana ma chhu.
   Expected: म हिजो नेपाल आइपुगेको हुँ र म दुई हप्ता बस्ने योजनामा ​​छु।
   Got:      म हिजो नेपाल आइपुगेको हुन् र म दुई हप्ता बस्ने योजनामा छु।
@@ -20,21 +16,13 @@ Accuracy: 462/935 = 49.41%
   Expected: मलाई लाग्छ कि मैले पोडकास्टको लागि साँच्चै राम्रो नयाँ काम सिर्जना गरेको छु।
   Got:      मलाई लाग्छ कि मैले पोद्चस्तको लागि साँच्चै राम्रो नयाँ काम सिर्जना गरेको छु।
 ----------------------------------------
-[33] Roman: Bastavma, tyo samasya ho… Thata!
-  Expected: वास्तवमा, त्यो समस्या हो ... ठट्टा!
-  Got:      बस्तवम, त्यो समस्या हो... ठट्टा!
-----------------------------------------
-[42] Roman: Malai tyo pustak dherai man parchha.
-  Expected: मलाई त्यो पुस्तक धेरै मन पर्छ।
-  Got:      मलाई त्यो पुस्तक धेरै मन पार्छ।
-----------------------------------------
 [44] Roman: Ma sarne kaam ma dherai byasta bhaeko chhu, ra ma film herna jaanko laagi saanchoi utsaahit chhu, tara malai yo pani thaaha chha ki masanga esko baarema jatil bichaarharu hunechhan.
   Expected: म सर्ने काममा धेरै व्यस्त भएको छु, र म फिल्म हेर्न जानको लागि साँच्चै उत्साहित छु, तर मलाई यो पनि थाहा छ कि मसँग यसको बारेमा जटिल विचारहरू हुनेछन्।
   Got:      म सार्ने काममा धेरै व्यस्त भएको छु, र म फिल्म हेर्न जानको लागि साँच्चै उत्साहित छु, तर मलाई यो पनि थाहा छ कि मसँग यसको बारेमा जटिल बिचारहरु हुनेछन्।
 ----------------------------------------
 [45] Roman: Kina bhane malai sangeet man parchha, tara jab jab ma sangeet herchhu, ma sochchhu ki pustak kati ramro chha, ra ma chahanchhu ki filmle upanyas bata thap lieko hos.
   Expected: किनभने मलाई संगीत मन पर्छ, तर जब जब म संगीत हेर्छु, म सोच्छु कि पुस्तक कति राम्रो छ, र म चाहन्छु कि फिल्मले उपन्यासबाट थप लिएको होस्।
-  Got:      किनभने मलाई संगीत मन पार्छ, तर जब जब म संगीत हेर्छु, म सोच्छु कि पुस्तक कति राम्रो छ, र म चाहन्छु कि फिल्मले उपन्यासबाट थप लिइएको होस्।
+  Got:      किनभने मलाई संगीत मन पर्छ, तर जब जब म संगीत हेर्छु, म सोच्छु कि पुस्तक कति राम्रो छ, र म चाहन्छु कि फिल्मले उपन्यासबाट थप लिइएको होस्।
 ----------------------------------------
 [46] Roman: Maile saanchoi aasha gareko thien ki tiniharu le tyahi garnechhan, tara maile kehi samikshya padheko chhu ra yasto laagchha ki tyasto hoin.
   Expected: मैले साँच्चै आशा गरेको थिएँ कि तिनीहरूले त्यही गर्नेछन्, तर मैले केही समीक्षा पढेको छु र यस्तो लाग्छ कि त्यस्तो होइन।
@@ -50,7 +38,7 @@ Accuracy: 462/935 = 49.41%
 ----------------------------------------
 [52] Roman: Bastavma, malai laagdaina ki maile mero jiwanma Christmas ko laagi yati dherai utsukta dekhaeko chhu.
   Expected: वास्तवमा, मलाई लाग्दैन कि मैले मेरो जीवनमा क्रिसमसको लागि यति धेरै उत्सुकता देखाएको छु।
-  Got:      बस्तवम, मलाई लाग्दैन कि मैले मेरो जीवनमा क्रिसमसको लागि यति धेरै उत्सुक्त देखाएको छु।
+  Got:      वास्तवमा, मलाई लाग्दैन कि मैले मेरो जीवनमा क्रिसमसको लागि यति धेरै उत्सुक्त देखाएको छु।
 ----------------------------------------
 [53] Roman: Aba, aanshik rupma yo kina bhane ma tanavma chhu ra ma khaali samaya, khaana ra alcohol ko laagi utsuk chhu, tara malai laagchha ki yo kina bhane ma Londonma basdai aaeko chhu ra, malai thaaha chhaina ki yo kewal barshauko British romantic comedies le London lai Christmas ma yati romantic dekhaeko ho, malai thaaha chhaina ki yo shaharko kendrama sundar Christmas battiharu hun, malai thaaha chhaina ki yo kewal kina bhane maile ghar chodeko chhu ra malai mero balyakaal ko baarema purano yaad aauchha, tara ma saanchoi Christmas ko laagi utsuk chhu.
   Expected: अब, आंशिक रूपमा यो किनभने म तनावमा छु र म खाली समय, खाना र अल्कोहलको लागि उत्सुक छु, तर मलाई लाग्छ कि यो किनभने म लन्डनमा बस्दै आएको छु र, मलाई थाहा छैन कि यो केवल वर्षौंको ब्रिटिश रोमान्टिक कमेडीहरूले लन्डनलाई क्रिसमसमा यति रोमान्टिक देखाएको हो, मलाई थाहा छैन कि यो शहरको केन्द्रमा सुन्दर क्रिसमस बत्तीहरू हुन्, मलाई थाहा छैन कि यो केवल किनभने मैले घर छोडेको छु र मलाई मेरो बाल्यकालको बारेमा पुरानो याद आउँछ, तर म साँच्चै क्रिसमसको लागि उत्सुक छु।
@@ -58,7 +46,7 @@ Accuracy: 462/935 = 49.41%
 ----------------------------------------
 [54] Roman: Ra yo barsha, mero bhai ra meri bahini pani mero aamababu ko ma basnechhan, ra uff.
   Expected: र यो वर्ष, मेरो भाइ र मेरी बहिनी पनि मेरो आमाबाबुकोमा बस्नेछन्, र उफ।
-  Got:      र यो वर्ष, मेरो भै र मेरी बहिनी पनि मेरो आमबबुकोमा बस्नेछन, र उफ्फ।
+  Got:      र यो वर्ष, मेरो भाइ र मेरी बहिनी पनि मेरो आमबबुकोमा बस्नेछन, र उफ्फ।
 ----------------------------------------
 [57] Roman: Malai kasto laagchha bhane ma Bridget Jones’s Diary film ma chhu.
   Expected: मलाई कस्तो लाग्छ भने म Bridget Jones’s Diary फिल्ममा छु।
@@ -66,19 +54,15 @@ Accuracy: 462/935 = 49.41%
 ----------------------------------------
 [58] Roman: Bridget Jones’s Diary ek pratishthit, ek dherai mahatwapurna, 90 ko dashak ko British romantic comedy film ho ra, ah, malai laagchha ki ma filmma Bridget bhanda premma ali badi safal chhu, tara nischit rupma Christmas ma London ko romantic watavaran film ko barema malai man parne kura ho.
   Expected: Bridget Jones’s Diary एक प्रतिष्ठित, एक धेरै महत्त्वपूर्ण, 90 को दशकको ब्रिटिश रोमान्टिक कमेडी फिल्म हो र, अह, मलाई लाग्छ कि म फिल्ममा Bridget भन्दा प्रेममा अलि बढी सफल छु, तर निश्चित रूपमा क्रिसमसमा लन्डनको रोमान्टिक वातावरण फिल्मको बारेमा मलाई मन पर्ने कुरा हो।
-  Got:      बृद्गेत जोनेस’स दिअर्य एक प्रतिष्ठित, एक धेरै महत्त्वपूर्ण, 90को दशकको ब्रिटिश रोमान्टिक चोमेद्य फिल्म हो र, अह, मलाई लाग्छ कि म फिल्ममा बृद्गेतभन्दा प्रेममा अलि बढी सफल छु, तर निश्चित रूपमा चृस्त्मसमा लन्डनको रोमान्टिक वतवरन फिल्मको बारेमा मलाई मन पार्ने कुरा हो।
+  Got:      बृद्गेत जोनेस’स दिअर्य एक प्रतिष्ठित, एक धेरै महत्त्वपूर्ण, 90को दशकको ब्रिटिश रोमान्टिक चोमेद्य फिल्म हो र, अह, मलाई लाग्छ कि म फिल्ममा बृद्गेतभन्दा प्रेममा अलि बढी सफल छु, तर निश्चित रूपमा चृस्त्मसमा लन्डनको रोमान्टिक वतवरन फिल्मको बारेमा मलाई मन पर्ने कुरा हो।
 ----------------------------------------
 [61] Roman: Tiniharu le manisaharu lai sochna lagaauchhan ki yo UK ma harek barsha hiun parchha.
   Expected: तिनीहरूले मानिसहरूलाई सोच्न लगाउँछन् कि यो UK मा हरेक वर्ष हिउँ पर्छ।
-  Got:      तिनीहरूले मानिसहरूलाई सोच्न लगाउछन कि यो उकमा हरेक वर्ष हिउँ पार्छ।
+  Got:      तिनीहरूले मानिसहरूलाई सोच्न लगाउछन कि यो उकमा हरेक वर्ष हिउँ पर्छ।
 ----------------------------------------
 [62] Roman: Ra masanga ek vidyarthi thin jo yasto desh bata aauchhin jaha hiun pardaina, unale sodhin, khair, kahile hiun parna suru hunchha?
   Expected: र मसँग एक विद्यार्थी थिइन् जो यस्तो देशबाट आउँछिन् जहाँ हिउँ पर्दैन, उनले सोधिन्, खैर, कहिले हिउँ पर्न सुरु हुन्छ?
   Got:      र मसँग एक विद्यार्थी थिइन् जो यस्तो देशबाट आउँछिन् जहाँ हिउँ पर्दैन, उनले सोधिन्, खैर, कहिले हिउँ पार्न सुरु हुन्छ?
-----------------------------------------
-[64] Roman: Ra maile unlai bhannuparyo, um, yo lagbhag tin barshama ek patak hiun parchha, ra yo samanyataya paglana bina jaminma basna ko lagi paryapta baklo hundaiana.
-  Expected: र मैले उनलाई भन्नुपर्‍यो, उम, यो लगभग तीन वर्षमा एक पटक हिउँ पर्छ, र यो सामान्यतया पग्लन बिना जमिनमा बस्नको लागि पर्याप्त बाक्लो हुँदैन।
-  Got:      र मैले उनलाई भन्नुपर्‍यो, उम, यो लगभग तीन वर्षमा एक पटक हिउँ पार्छ, र यो सामान्यतया पग्लन बिना जमिनमा बस्नको लागि पर्याप्त बाक्लो हुँदैन।
 ----------------------------------------
 [65] Roman: Tesaiile, tapaainle Bridget Jones’s Diary lai Londonma hiun parnechha bhanera sochna lagaeko ma dosh dina saknuhunchha.
   Expected: त्यसैले, तपाईंले Bridget Jones’s Diary लाई लन्डनमा हिउँ पर्नेछ भनेर सोच्न लगाएकोमा दोष दिन सक्नुहुन्छ।
@@ -90,7 +74,7 @@ Accuracy: 462/935 = 49.41%
 ----------------------------------------
 [67] Roman: Bastavma, malai laagchha ki tapaainle yo myth ko laagi vishesh gari Hugh Grant lai dosh dinuparchha ki UK ma harek barsha hiun parchha.
   Expected: वास्तवमा, मलाई लाग्छ कि तपाईंले यो मिथकको लागि विशेष गरी Hugh Grant लाई दोष दिनुपर्छ कि UK मा हरेक वर्ष हिउँ पर्छ।
-  Got:      बस्तवम, मलाई लाग्छ कि तपाईंले यो म्य्थको लागि विशेष गरी हुघ ग्रँतलाई दोश दिनुपर्छ कि उकमा हरेक वर्ष हिउँ पार्छ।
+  Got:      वास्तवमा, मलाई लाग्छ कि तपाईंले यो म्य्थको लागि विशेष गरी हुघ ग्रँतलाई दोश दिनुपर्छ कि उकमा हरेक वर्ष हिउँ पर्छ।
 ----------------------------------------
 [69] Roman: Tesaiile aajako katha ko barema kura garaun taki ma anantakalsamma kura garirahana naparos.
   Expected: त्यसैले आजको कथाको बारेमा कुरा गरौं ताकि म अनन्तकालसम्म कुरा गरिरहन नपरोस्।
@@ -310,7 +294,7 @@ Accuracy: 462/935 = 49.41%
 ----------------------------------------
 [192] Roman: Aba hamilai brahmandiya itihasko arbaun barshaharu, Big Bang ko lagbhag nau arba barsha pachi, Milky Way galaxy ko ek spiral bhuja bhitrako ek bisesh kshetrama, hamro galactic gharma chhito agadi badhaun. Yaha, ek vishal nebula bhitra, gas ra dhulo ko badal aphnai gurutwakarshan khichaw antargat sankuchit huna thalyo. Yo kunai sadharan badal thiyena; yo pahile bancheka ra mareka taraharuka awasesharule samriddha thiyo, taraharu jasle aphno jwalant bhattiharuma bhari tatwaharu baneka thie ra tiniharko mrityuma brahmandabhari chhareka thie. Yo badalle hamro sauryamandal banauna aawashyak parne samagriharu rakheko thiyo.
   Expected: अब हामीलाई ब्रह्माण्डीय इतिहासको अरबौं वर्षहरू, बिग ब्याङ्गको लगभग नौ अर्ब वर्ष पछि, मिल्की वे ग्यालेक्सीको एक सर्पिल भुजा भित्रको एक विशेष क्षेत्रमा, हाम्रो ग्यालेक्टिक घरमा छिटो अगाडि बढौं। यहाँ, एक विशाल नेबुला भित्र, ग्यास र धुलोको बादल आफ्नै गुरुत्वाकर्षण खिंचाव अन्तर्गत संकुचित हुन थाल्यो। यो कुनै साधारण बादल थिएन; यो पहिले बाँचेका र मरेका ताराहरूका अवशेषहरूले समृद्ध थियो, ताराहरू जसले आफ्नो ज्वलन्त भट्टीहरूमा भारी तत्वहरू बनाएका थिए र तिनीहरूको मृत्युमा ब्रह्माण्डभरि छरेका थिए। यो बादलले हाम्रो सौर्यमण्डल बनाउन आवश्यक पर्ने सामग्रीहरू राखेको थियो।
-  Got:      अब हामीलाई ब्रह्माण्डीय इतिहासको अरबौं वर्षहरू, बिग ब्याङ्गको लगभग नौ अर्ब वर्ष पछि, मिल्की वे ग्यालेक्सीको एक सर्पिल भुजा भित्रको एक विशेष क्षेत्रमा, हाम्रो ग्यालेक्टिक घरमा छिटो अगाडि बढौं। यहाँ, एक विशाल नेबुला भित्र, ग्यास र धुलोको बादल आफ्नै गुरुत्वाकर्षण खिंचाव अन्तर्गत संकुचित हुन थाल्यो। यो कुनै साधारण बादल थिएन; यो पहिले बाँचेका र मरेका ताराहरूका अवशेषहरूले समृद्ध थियो, ताराहरू जसले आफ्नो ज्वलन्त भट्टीहरूमा भारी तत्वहरू बनेका थिए र तिनीहरूको मृत्युमा ब्रह्माण्डभरि छरेका थिए। यो बादलले हाम्रो सौर्यमण्डल बनाउन आवश्यक पार्ने सामग्रीहरू राखेको थियो।
+  Got:      अब हामीलाई ब्रह्माण्डीय इतिहासको अरबौं वर्षहरू, बिग ब्याङ्गको लगभग नौ अर्ब वर्ष पछि, मिल्की वे ग्यालेक्सीको एक सर्पिल भुजा भित्रको एक विशेष क्षेत्रमा, हाम्रो ग्यालेक्टिक घरमा छिटो अगाडि बढौं। यहाँ, एक विशाल नेबुला भित्र, ग्यास र धुलोको बादल आफ्नै गुरुत्वाकर्षण खिंचाव अन्तर्गत संकुचित हुन थाल्यो। यो कुनै साधारण बादल थिएन; यो पहिले बाँचेका र मरेका ताराहरूका अवशेषहरूले समृद्ध थियो, ताराहरू जसले आफ्नो ज्वलन्त भट्टीहरूमा भारी तत्वहरू बनेका थिए र तिनीहरूको मृत्युमा ब्रह्माण्डभरि छरेका थिए। यो बादलले हाम्रो सौर्यमण्डल बनाउन आवश्यक पर्ने सामग्रीहरू राखेको थियो।
 ----------------------------------------
 [194] Roman: Badalko adhikaansh pinda, gurutwakarshandwara khichiyeko, kendrama jamma bhayo, ek ghana, taato core banaudai: ek proto-surya, hamro tarako purwawarti. Yo proto-surya ajhai vastavik tara thiyena; yo gas ko ball thiyo jun lagatar pinda jamma gardai ra taato hundai gairakheko thiyo. Esaibich, banki samagri, badhdo ghumaiko karanle sidhai kendrama khasna nasakne, proto-suryalai ghereko ghumne diskma samatal bhayo. Yo protoplanetary disk, ghumaiyeko brahmandiya pizza ko aata jastai, grahaharuko janmasthan banyo.
   Expected: बादलको अधिकांश पिण्ड, गुरुत्वाकर्षणद्वारा खिचिएको, केन्द्रमा जम्मा भयो, एक घना, तातो कोर बनाउँदै: एक प्रोटो-सूर्य, हाम्रो ताराको पूर्ववर्ती। यो प्रोटो-सूर्य अझै वास्तविक तारा थिएन; यो ग्यासको बल थियो जुन लगातार पिण्ड जम्मा गर्दै र तातो हुँदै गइरहेको थियो। यसैबीच, बाँकी सामग्री, बढ्दो घुमाईको कारणले सिधै केन्द्रमा खस्न नसक्ने, प्रोटो-सूर्यलाई घेरेको घुम्ने डिस्कमा समतल भयो। यो प्रोटोप्लानेटरी डिस्क, घुमाइएको ब्रह्माण्डीय पिज्जाको आटा जस्तै, ग्रहहरूको जन्मस्थान बन्यो।
@@ -564,6 +548,10 @@ Accuracy: 462/935 = 49.41%
   Expected: हकिङले बताउनुहुन्छ कि सिद्धान्तले ब्ल्याक होलहरूको अस्तित्वको भविष्यवाणी गर्दछ, जहाँ स्पेसटाइम यति नाटकीय रूपमा घुमाइएको छ कि केही पनि, प्रकाशसमेत भाग्न सक्दैन।
   Got:      हकिङले बताउनुहुन्छ कि सिद्धान्तले ब्ल्याक होलहरुको अस्तित्वको भविश्यवनी गर्दछ, जहाँ स्पेसटाइम यति नाटकीय रूपमा घुमाइएको छ कि केही पनि, प्रकाश समेत भाग्न सक्दैन।
 ----------------------------------------
+[306] Roman: yas bicharle samanya sapekshatako gahiro prabhavlai thap jod dinchha, ra yasle spacetimko hamro bujhaima parne prabhavharulai pani spashta pardachha.
+  Expected: यस विचारले सामान्य सापेक्षताको गहिरो प्रभावलाई थप जोड दिन्छ, र यसले स्पेसटाइमको हाम्रो बुझाइमा पार्ने प्रभावहरूलाई पनि स्पष्ट पार्दछ।
+  Got:      यस विचारले सामान्य सापेक्षताको गहिरो प्रभावलाई थप जोड दिन्छ, र यसले स्पेसटाइमको हाम्रो बुझाइमा पर्ने प्रभावहरूलाई पनि स्पष्ट पार्दछ।
+----------------------------------------
 [312] Roman: uhaale aounlyaunuhunchha ki Einstein ko sapekshata ko vishesh siddhantale samaya nirapeksh nabai paryabekshak ko gatisanga sapeksh hune kura dekhaeko chha.
   Expected: उहाँले औंल्याउनुहुन्छ कि आइन्स्टाइनको सापेक्षताको विशेष सिद्धान्तले समय निरपेक्ष नभई पर्यवेक्षकको गतिसँग सापेक्ष हुने कुरा देखाएको छ।
   Got:      उहाँले अऔँल्यौनुहुन्छ कि आइन्स्टाइनको सापेक्षताको विशेष सिद्धान्तले समय निरपेक्ष नभई पर्यबेक्षकको गतिसँग सपेक्ष हुने कुरा देखाएको छ।
@@ -576,6 +564,10 @@ Accuracy: 462/935 = 49.41%
   Expected: उहाँले यो कुरालाई निरन्तर जोड दिनुहुन्छ कि यो आइन्स्टाइनको सापेक्षताको सामान्य सिद्धान्त मात्र हो जसले घुमाउरो स्पेसटाइमको माध्यमबाट यस सम्भावनालाई फेरि खोल्छ।
   Got:      उहाँले यो कुरालाई निरन्तर जोड दिनुहुन्छ कि यो आइन्स्टाइनको सापेक्षताको सामान्य सिद्द्हँत मात्र हो जसले घुमाउरो स्पेसटाइमको माध्यमबाट यस सम्भावनालाई फेरि खोल्छ।
 ----------------------------------------
+[318] Roman: saiddhantik kurama yo jodle ganitiya roopma ke sambhav chha ra vastavik sansarma ke abalokan gariyeko chha bichma bhinnata chhutyaunuko mahattwalai prakash parchha.
+  Expected: सैद्धान्तिक कुरामा यो जोडले गणितीय रूपमा के सम्भव छ र वास्तविक संसारमा के अवलोकन गरिएको छ बीचमा भिन्नता छुट्याउनुको महत्त्वलाई प्रकाश पार्छ।
+  Got:      सैद्धान्तिक कुरामा यो जोडले गणितीय रूपमा के सम्भव छ र वास्तविक संसारमा के अवलोकन गरिएको छ बीचमा भिन्नता छुट्याउनुको महत्त्वलाई प्रकाश पर्छ।
+----------------------------------------
 [319] Roman: tyaspachhi uha samaya yatrasanga sambandhit birodhabhasaharusanga sangharsha garnuhunchha, jastai hajurbaa birodhabhas, jahan ek samaya yatri le bigat lai pariwartan garna sakdachha, jasle garda samayrekhama asangat haru auna sakchhan, visheshgari aphno janmalaai rokn sakchhan.
   Expected: त्यसपछि उहाँ समय यात्रासँग सम्बन्धित विरोधाभासहरूसँग संघर्ष गर्नुहुन्छ, जस्तै हजुरबुबा विरोधाभास, जहाँ एक समय यात्रीले विगतलाई परिवर्तन गर्न सक्दछ, जसले गर्दा समयरेखामा असंगतिहरू आउन सक्छन्, विशेष गरी आफ्नो जन्मलाई रोक्न सक्छन्।
   Got:      त्यसपछि उहाँ समय यात्रासँग सम्बन्धित विरोधाभासहरूसँग सङ्हर्श गर्नुहुन्छ, जस्तै हजुर्बा विरोधाभास, जहाँ एक समय यतृले बिगतलाई परिवर्तन गर्न सक्दछ, जसले गर्दा समयरेखामा असङतहरु औन सक्छन्, गरी आफ्नो जँमलाइ रोक्न सक्छन्।
@@ -586,7 +578,7 @@ Accuracy: 462/935 = 49.41%
 ----------------------------------------
 [326] Roman: yo sthitiko baigyanik satyako lagi sunaulo mapdandako roopma anubhavjanya praman prati uhako gahiro pratibaddhatalai prakash parchha.
   Expected: यो स्थितिको वैज्ञानिक सत्यको लागि सुनौलो मापदण्डको रूपमा अनुभवजन्य प्रमाणप्रति उहाँको गहिरो प्रतिबद्धतालाई प्रकाश पार्छ।
-  Got:      यो स्थितिको वैज्ञानिक सत्यको लागि सुनौलो मप्दँदको रूपमा अनुभव्जञ प्रमाण प्रति उहाँको गहिरो प्रतिबद्धतालाई प्रकाश पार्छ।
+  Got:      यो स्थितिको वैज्ञानिक सत्यको लागि सुनौलो मप्दँदको रूपमा अनुभव्जञ प्रमाण प्रति उहाँको गहिरो प्रतिबद्धतालाई प्रकाश पर्छ।
 ----------------------------------------
 [328] Roman: adhyaya 7 le gambhir mod linchha, manavjatiko astitwama raheka khataraharuma dhyan kendrit gardachha.
   Expected: अध्याय ७ ले गम्भीर मोड लिन्छ, मानवजातिको अस्तित्वमा रहेका खतराहरूमा ध्यान केन्द्रित गर्दछ।
@@ -622,7 +614,7 @@ Accuracy: 462/935 = 49.41%
 ----------------------------------------
 [345] Roman: yasle manav aavishkarma uhanko vishwas ra yasle yi ch चुनौती harulaai par garne kshamatalaai prakash parchha.
   Expected: यसले मानव आविष्कारमा उहाँको विश्वास र यसले यी चुनौतीहरूलाई पार गर्ने क्षमतालाई प्रकाश पार्छ।
-  Got:      यसले मानव हुनुमा उहाँको विश्वास र यसले यी चुनौती चुनौती हरुलाइ पार गर्ने क्षमतलाइ प्रकाश पार्छ।
+  Got:      यसले मानव हुनुमा उहाँको विश्वास र यसले यी चुनौती चुनौती हरुलाइ पार गर्ने क्षमतलाइ प्रकाश पर्छ।
 ----------------------------------------
 [350] Roman: ridle kushaltapurvak tarka garnuhunchha ki prakritik chayan mukhytaya jean ko starma sanchalan hunchha, jasle tyaspachhi jivalai yasako prasaranako lagi ek madhyamko roopma aakar dinchha. yo abadharana jiva ko starma kam garne prakritik chayan ko adhik paramparagat drishtikonbata prasthan gardachha.
   Expected: रिडले कुशलतापूर्वक तर्क गर्नुहुन्छ कि प्राकृतिक चयन मुख्यतया जीनको स्तरमा सञ्चालन हुन्छ, जसले त्यसपछि जीवलाई यसको प्रसारणको लागि एक माध्यमको रूपमा आकार दिन्छ। यो अवधारणा जीवको स्तरमा काम गर्ने प्राकृतिक चयनको अधिक परम्परागत दृष्टिकोणबाट प्रस्थान गर्दछ।
@@ -694,11 +686,15 @@ Accuracy: 462/935 = 49.41%
 ----------------------------------------
 [371] Roman: yi tatwaharu, jun ek patak arthahin maninthiyo, aba genom bikas ra sthirtalaai mahatwapurna roopma prabhav parne ra hamro DNAma pariwartanko nirantar strot pradan garne roopma bujhinchha. hamro gair-coding DNAko yo nirantar pariwartan ra bikasle hamro genomko abiswasniya gatishil prakritilaai pradarshan gardachha.
   Expected: यी तत्वहरू, जुन एक पटक अर्थहीन मानिन्थ्यो, अब जीनोम विकास र स्थिरतालाई महत्त्वपूर्ण रूपमा प्रभाव पार्ने र हाम्रो डीएनएमा परिवर्तनको निरन्तर स्रोत प्रदान गर्ने रूपमा बुझिन्छ। हाम्रो गैर-कोडिङ डीएनएको यो निरन्तर परिवर्तन र विकासले हाम्रो जीनोमको अविश्वसनीय गतिशील प्रकृतिलाई प्रदर्शन गर्दछ।
-  Got:      यी तत्वहरू, जुन एक पटक अर्थहीन मानिन्थ्यो, अब जीनोम विकास र स्थिरतालाई महत्त्वपूर्ण रूपमा प्रभाव पार्ने र हाम्रो डीएनएमा कुञ्जी निरन्तर स्रोत प्रदान गर्ने रूपमा बुझिन्छ। हाम्रो गैर-चोदिङ डीएनएको यो निरन्तर परिवर्तन र विकासले हाम्रो जीनोमको अविश्वसनीय गतिशील प्रकृतिलाई प्रदर्शन गर्दछ।
+  Got:      यी तत्वहरू, जुन एक पटक अर्थहीन मानिन्थ्यो, अब जीनोम विकास र स्थिरतालाई महत्त्वपूर्ण रूपमा प्रभाव पर्ने र हाम्रो डीएनएमा कुञ्जी निरन्तर स्रोत प्रदान गर्ने रूपमा बुझिन्छ। हाम्रो गैर-चोदिङ डीएनएको यो निरन्तर परिवर्तन र विकासले हाम्रो जीनोमको अविश्वसनीय गतिशील प्रकृतिलाई प्रदर्शन गर्दछ।
 ----------------------------------------
 [372] Roman: aanuwanshik niyatibad banam swatantra ichchha: mukherjee le hamro jeanharule hamra karyaharu ra chhanotaharu purwanirdharit gardachha ki bhanne jatil prashnako sath sangharsh garnuhunchha, yo abadharanalaai aanuwanshik niyatibadko roopma chininchha.
   Expected: आनुवंशिक नियतिवाद बनाम स्वतन्त्र इच्छा: मुखर्जीले हाम्रो जीनहरूले हाम्रा कार्यहरू र छनोटहरू पूर्वनिर्धारित गर्दछ कि भन्ने जटिल प्रश्नको साथ संघर्ष गर्नुहुन्छ, यो अवधारणालाई आनुवंशिक नियतिवादको रूपमा चिनिन्छ।
   Got:      आनुवंशिक नियतिबद बनम स्वतन्त्र इच्छा: मुखर्जीले हाम्रो जीनहरूले हाम्रा कार्यहरू र छनोतहरु पूर्वनिर्धारित गर्दछ कि भन्ने जटिल प्रश्नको साथ संघर्ष गर्नुहुन्छ, यो अवधारणालाई आनुवंशिक नियतिवादको रूपमा चिनिन्छ।
+----------------------------------------
+[373] Roman: uhaale bibhinna visheshtaharu ra rogharu ma jeanharu jodne baigyanik pramanharu sabadhanipurvak anweshan garnuhunchha, jabaki hamro anubhav ra jiwanma hamile garne nirnayaharuko pani thulo prabhav parne kura swikarnuhunchha.
+  Expected: उहाँले विभिन्न विशेषताहरू र रोगहरूमा जीनहरू जोड्ने वैज्ञानिक प्रमाणहरू सावधानीपूर्वक अन्वेषण गर्नुहुन्छ, जबकि हाम्रो अनुभव र जीवनमा हामीले गर्ने निर्णयहरूको पनि ठूलो प्रभाव पार्ने कुरा स्वीकार्नुहुन्छ।
+  Got:      उहाँले विभिन्न विशेषताहरू र रोगहरूमा जीनहरू जोड्ने वैज्ञानिक प्रमाणहरू सावधानीपूर्वक अन्वेषण गर्नुहुन्छ, जबकि हाम्रो अनुभव र जीवनमा हामीले गर्ने निर्णयहरूको पनि ठूलो प्रभाव पर्ने कुरा स्वीकार्नुहुन्छ।
 ----------------------------------------
 [374] Roman: uhaale antata ek sukshma paripekshyako sujhab dinuhunchha, tarka gardai ki jeanharule hamra prabrittiharulai prabhav pare pani, tinile hamilai purna roopma niyantran gardainan. uhaale swatantra ichchhako bhumika ra bahiri karakaharuko mahatwama jod dinuhunchha, jastai hamro samajik vatavaran, vyaktigat chhanotharu, ra palanposhan, hami ko hau ra hamile garne chhanotharulaai aakar dinma.
   Expected: उहाँले अन्ततः एक सूक्ष्म परिप्रेक्ष्यको सुझाव दिनुहुन्छ, तर्क गर्दै कि जीनहरूले हाम्रा प्रवृत्तिहरूलाई प्रभाव पारे पनि, तिनीहरूले हामीलाई पूर्ण रूपमा नियन्त्रण गर्दैनन्। उहाँले स्वतन्त्र इच्छाको भूमिका र बाहिरी कारकहरूको महत्त्वमा जोड दिनुहुन्छ, जस्तै हाम्रो सामाजिक वातावरण, व्यक्तिगत छनोटहरू, र पालनपोषण, हामी को हौं र हामीले गर्ने छनोटहरूलाई आकार दिनमा।
@@ -707,6 +703,10 @@ Accuracy: 462/935 = 49.41%
 [375] Roman: uha dridha hunuhunchha ki hamra jeanharu hamro purna bhagya hoina.
   Expected: उहाँ दृढ हुनुहुन्छ कि हाम्रा जीनहरू हाम्रो पूर्ण भाग्य होइनन्।
   Got:      उहाँ दृढ हुनुहुन्छ कि हाम्रा जीनहरू हाम्रो पूर्ण भाग्य होइन।
+----------------------------------------
+[376] Roman: aanuwanshik anusandhanma naitik dubidharu: henrietta lacks ko kathako sklootko sabadhanipurvak anusandhanle unko koshikaharuko adhigrahan ra prayogko waripari bhayeka dherai naitik asafaltaharuma prakash parchha.
+  Expected: आनुवंशिक अनुसन्धानमा नैतिक दुविधाहरू: हेनरिटा ल्याक्सको कथाको स्क्लूटको सावधानीपूर्वक अनुसन्धानले उनको कोशिकाहरूको अधिग्रहण र प्रयोगको वरिपरि भएका धेरै नैतिक असफलताहरूमा प्रकाश पार्छ।
+  Got:      आनुवंशिक अनुसन्धानमा नैतिक दुविधाहरू: हेनरिटा ल्याक्सको कथाको स्क्लूटको सावधानीपूर्वक अनुसन्धानले उनको कोशिकाहरूको अधिग्रहण र प्रयोगको वरिपरि भएका धेरै नैतिक असफलताहरूमा प्रकाश पर्छ।
 ----------------------------------------
 [382] Roman: lekhak, siddhartha mukherjee le pustakalaai frame garna "jiwani" ko rupak prayog garnuhunchha, cancerlai kebal chikitsa awasthako satta aphnai jiwan katha bhayeko bishaya banaunuhunchha.
   Expected: लेखक, सिद्धार्थ मुखर्जीले पुस्तकलाई फ्रेम गर्न "जीवनी" को रूपक प्रयोग गर्नुहुन्छ, क्यान्सरलाई केवल चिकित्सा अवस्थाको सट्टा आफ्नै जीवन कथा भएको विषय बनाउनुहुन्छ।
@@ -808,6 +808,10 @@ Accuracy: 462/935 = 49.41%
   Expected: हलस्टेडको काम, जुन यसको शारीरिक शुद्धताको लागि उल्लेखनीय थियो, क्यान्सरको लागि सबैभन्दा प्रभावकारी उपचारको रूपमा कट्टरपन्थी शल्यक्रियामा विश्वासद्वारा समर्थित थियो। हलस्टेडले शल्यक्रियाको सीमाहरूलाई धकेले, प्रायः हरेक अवस्थामा घाँटीमा शल्यक्रिया गर्ने, प्रमाणको बावजुद पनि, सावधानीपूर्वक गरिएका शल्यक्रियाहरूमा पनि अत्यधिक निर्भरताको सीमितताहरू प्रदर्शन गर्दै।
   Got:      हलस्टेडको काम, जुन यसको शारीरिक शुद्द्हतको लागि उल्लेखनीय थियो, क्यान्सरको लागि सबैभन्दा प्रभावकारी उपचारको रूपमा कट्टरपन्थी शल्यक्रियामा विश्वास महत्त्वद्वारा समर्थित थियो। हलस्टेडले शल्यक्रियाको सिमहरुलाइ धकेले, प्रायः हरेक अवस्थामा घँतीमा शल्यक्रिया गर्ने, प्रमाणको बावजुद पनि, सावधानीपूर्वक गरिएका शल्यक्रियाहरुमा पनि अत्यधिक निर्भरताको सीमितताहरू प्रदर्शन गर्दै।
 ----------------------------------------
+[438] Roman: yasle prakash parchha ki kasari chikitsa upacharko lagi uchcha bikasit drishtikonharu pani simit huna sakchhan yadi tinharu trutipurna aadharma adharit chhan bhane. halstedko drishtikon, uhanko samayama abhutpurva dekhe tapani, yo mahatwapurna pathlaai highlight gardachha ki charam drishtikonharule sadhai uttam parinam nadina sakchha.
+  Expected: यसले प्रकाश पार्छ कि कसरी चिकित्सा उपचारको लागि उच्च विकसित दृष्टिकोणहरू पनि सीमित हुन सक्छन् यदि तिनीहरू त्रुटिपूर्ण आधारमा आधारित छन् भने। हलस्टेडको दृष्टिकोण, उहाँको समयमा अभूतपूर्व देखिए तापनि, यो महत्त्वपूर्ण पाठलाई हाइलाइट गर्दछ कि चरम दृष्टिकोणहरूले सधैं उत्तम परिणाम नदिन सक्छ।
+  Got:      यसले प्रकाश पर्छ कि कसरी चिकित्सा उपचारको लागि उच्च विकसित दृष्टिकोणहरू पनि सीमित हुन सक्छन् यदि तिनीहरू त्रुटिपूर्ण आधारमा आधारित छन् भने। हलस्टेडको दृष्टिकोण, उहाँको समयमा अभूतपूर्व देखिए तापनि, यो महत्त्वपूर्ण पाठलाई हाइलाइट गर्दछ कि चरम दृष्टिकोणहरूले सधैं उत्तम परिणाम नदिन सक्छ।
+----------------------------------------
 [442] Roman: uha anibarya roopma yo bicharlaai ghumaudai hunuhunthiyo ki ek asamanya cellaai lakshit garna, pahile samanya cellko jeevbigyan bujhnu pardachha, jun aaja cancer anusandhanma ek mahatwapurna bichar ho.
   Expected: उहाँ अनिवार्य रूपमा यो विचारलाई घुमाउँदै हुनुहुन्थ्यो कि एक असामान्य सेललाई लक्षित गर्न, पहिले सामान्य सेलको जीवविज्ञान बुझ्नुपर्दछ, जुन आज क्यान्सर अनुसन्धानमा एक महत्वपूर्ण विचार हो।
   Got:      उहाँ अनिवार्य रूपमा यो विचारलाई घुमाउँदै हुनुहुँथियो कि एक असामान्य असामान्य लक्षित गर्न, पहिले सामान्य सामान्य जीवविज्ञान बुझ्नु पार्दछ, जुन आज क्यान्सर अनुसन्धानमा एक महत्त्वपूर्ण विचार हो।
@@ -855,6 +859,10 @@ Accuracy: 462/935 = 49.41%
 [460] Roman: yo ek mahatwapurna kshan thiyo, kinaki aba yo pahichan bhayo ki sankraman shalyakriyako apariharya parinam hunuko satta rokn sakincha. listerko kamle prakriyako bujhailai pani pariwartan garyo, kinaki yasle sukshmajeevaharuko adrishya sansar ra rogma tinharko bhumikako barema jagarukta lyayo.
   Expected: यो एक महत्वपूर्ण क्षण थियो, किनकि अब यो पहिचान भयो कि संक्रमण शल्यक्रियाको अपरिहार्य परिणाम हुनुको सट्टा रोक्न सकिन्छ। लिस्टरको कामले प्रक्रियाको बुझाइलाई पनि परिवर्तन गर्‍यो, किनकि यसले सूक्ष्मजीवहरूको अदृश्य संसार र रोगमा तिनीहरूको भूमिकाको बारेमा जागरूकता ल्यायो।
   Got:      यो एक महत्त्वपूर्ण क्षण थियो, किनकि अब यो पहिचान भयो कि संक्रमण शल्यक्रियाको अपरिहार्य परिणाम हुनुको सट्टा रोक्न सकिन्छ। लिस्टरको कामले प्रक्रियाको बुझाइलाई पनि परिवर्तन गर्‍यो, किनकि यसले सूक्ष्मजीवहरूको अदृश्य संसार र रोगमा तिनीहरूको भूमिकाको बारेमा जागरूकता ल्यायो।
+----------------------------------------
+[468] Roman: yadyapi, adhyayale yi kattarpandhi shalya chikitsa prakriyaharuko prabhavkaritako barema sukshma roopma shanka prastut gardachha. halstedko sabadhanipurvak data sankalanko bawajud, datale "cancer niko parne" kattarpandhi shalyakriyako shreshthata shankaspad aadharma raheko khulasa garna thalyo.
+  Expected: यद्यपि, अध्यायले यी कट्टरपन्थी शल्य चिकित्सा प्रक्रियाहरूको प्रभावकारिताको बारेमा सूक्ष्म रूपमा शंका प्रस्तुत गर्दछ। हलस्टेडको सावधानीपूर्वक डाटा सङ्कलनको बावजुद, डाटाले "क्यान्सर निको पार्ने" कट्टरपन्थी शल्यक्रियाको श्रेष्ठता शंकास्पद आधारमा रहेको खुलासा गर्न थाल्यो।
+  Got:      यद्यपि, अध्यायले यी कट्टरपन्थी शल्य चिकित्सा प्रक्रियाहरूको प्रभावकारिताको बारेमा सूक्ष्म रूपमा शंका प्रस्तुत गर्दछ। हलस्टेडको सावधानीपूर्वक डाटा सङ्कलनको बावजुद, डाटाले "क्यान्सर निको पर्ने" कट्टरपन्थी शल्यक्रियाको श्रेष्ठता शंकास्पद आधारमा रहेको खुलासा गर्न थाल्यो।
 ----------------------------------------
 [469] Roman: thap shalyakriyale prabhavkari upacharma anuwad garirheko thiena, kinaki dherai birami yi gahan roopma aakramak shalyakriya pachi pani rogko shikar bhairheka thie.
   Expected: थप शल्यक्रियाले प्रभावकारी उपचारमा अनुवाद गरिरहेको थिएन, किनकि धेरै बिरामीहरू यी गहन रूपमा आक्रामक शल्यक्रिया पछि पनि रोगको सिकार भइरहेका थिए।
@@ -1012,6 +1020,10 @@ Accuracy: 462/935 = 49.41%
   Expected: यसले नयाँ उपचारहरूको प्रभावकारिताको वस्तुनिष्ठ मूल्याङ्कन गर्न र वैज्ञानिक प्रमाणमा आधारित जानकारीमूलक सिफारिसहरू गर्नमा तथ्याङ्कविद्, डेटा विश्लेषकहरू, र अन्य अनुसन्धान पेशेवरहरूको महत्त्वपूर्ण भूमिकालाई जोड दिन्छ।
   Got:      यसले नयाँ उपचारहरूको प्रभावकारिताको वस्तुनिष्ठ मूल्याङ्कन गर्न र वैज्ञानिक प्रमाणमा आधारित जानकारीमूलक सिफारिसहरू गर्नमा तथ्याङ्कविद्, डाटा विश्लेषकहरू, र अन्य अनुसन्धान पेशेवरहरूको महत्त्वपूर्ण भूमिकालाई जोड दिन्छ।
 ----------------------------------------
+[556] Roman: yadyapi, pustakle yi parikshanharule biramiharu ra tiniharuka pariwarharu dubaiparma parne tivra bhavanatmak bojh lai pani swikardachha.
+  Expected: यद्यपि, पुस्तकले यी परीक्षणहरूले बिरामीहरू र तिनीहरूका परिवारहरू दुवैमा पार्ने तीव्र भावनात्मक बोझलाई पनि स्वीकार्दछ।
+  Got:      यद्यपि, पुस्तकले यी परीक्षणहरूले बिरामीहरू र तिनीहरूका परिवारहरू दुवैमा पर्ने तीव्र भावनात्मक बोझलाई पनि स्वीकार्दछ।
+----------------------------------------
 [557] Roman: adhyayale mastishkma cancerko "abhayarnya" ko abadharanalaai thap anweshan gardachha, jahan rakta-mastishka badha, ek surakshak jhillile dherai chemotherapy aushadhiharulai cancer koshikaharuma prabhavkari roopma pugnabata rokeko thiyo, jasle garda praayah punarabritti hunthyo ra prabhavkari upachartirphako batoma arko thulo badha prastut garyo.
   Expected: अध्यायले मस्तिष्कमा क्यान्सरको "अभयारण्य" को अवधारणालाई थप अन्वेषण गर्दछ, जहाँ रक्त-मस्तिष्क बाधा, एक सुरक्षात्मक झिल्लीले धेरै केमोथेरापी औषधिहरूलाई क्यान्सर कोशिकाहरूमा प्रभावकारी रूपमा पुग्नबाट रोकेको थियो, जसले गर्दा प्रायः पुनरावृत्ति हुन्थ्यो र प्रभावकारी उपचारतर्फको बाटोमा अर्को ठूलो बाधा प्रस्तुत गर्‍यो।
   Got:      अध्यायले मस्तिष्कमा क्यान्सरको "अभयारण्य" को अवधारणालाई थप अन्वेषण गर्दछ, जहाँ रक्त-मस्तिशका बाधा, एक सुरक्षात्मक झिल्लीले धेरै केमोथेरापी औषधिहरूलाई क्यान्सर कोशिकाहरूमा प्रभावकारी रूपमा पुग्नबाट रोकेको थियो, जसले गर्दा प्रायः पुनरावृत्ति हुन्थ्यो र प्रभावकारी उपचारतर्फको बाटोमा अर्को ठूलो बाधा प्रस्तुत गर्‍यो।
@@ -1038,7 +1050,7 @@ Accuracy: 462/935 = 49.41%
 ----------------------------------------
 [573] Roman: adhyayale biramilaai kebal rogko roopma matra nabai ek sampurna vyaktiko roopma vyavahar garnuparne mahattwama jod dinchha. yasle doctor-birami sambandhma sahanubhuti, karuna ra imandariko mahatwapurna bhumikalaai prakash parchha.
   Expected: अध्यायले बिरामीलाई केवल रोगको रूपमा मात्र नभई एक सम्पूर्ण व्यक्तिको रूपमा व्यवहार गर्नुपर्ने महत्त्वमा जोड दिन्छ। यसले डाक्टर-बिरामी सम्बन्धमा सहानुभूति, करुणा र इमानदारीको महत्त्वपूर्ण भूमिकालाई प्रकाश पार्छ।
-  Got:      अध्यायले बिरामीलाई केवल रोगको रूपमा मात्र नभई एक सम्पूर्ण व्यक्तिको रूपमा व्यवहार गर्नुपर्ने महत्त्वमा जोड दिन्छ। यसले दोच्तोर-बिरामी सम्बन्धमा सहानुभूति, करुणा र इमानदारीको महत्त्वपूर्ण भूमिकालाई प्रकाश पार्छ।
+  Got:      अध्यायले बिरामीलाई केवल रोगको रूपमा मात्र नभई एक सम्पूर्ण व्यक्तिको रूपमा व्यवहार गर्नुपर्ने महत्त्वमा जोड दिन्छ। यसले दोच्तोर-बिरामी सम्बन्धमा सहानुभूति, करुणा र इमानदारीको महत्त्वपूर्ण भूमिकालाई प्रकाश पर्छ।
 ----------------------------------------
 [574] Roman: shirshakle aaphaima dherai cancer rogi harule aphno upachar asafal bhayema tyagine dar mahasus garne kuralai pratibimbit gardachha.
   Expected: शीर्षकले आफैँमा धेरै क्यान्सर रोगीहरूले आफ्नो उपचार असफल भएमा त्यागिने डर महसुस गर्ने कुरालाई प्रतिबिम्बित गर्दछ।
@@ -1127,10 +1139,6 @@ Accuracy: 462/935 = 49.41%
 [609] Roman: F1 component mitochondrial matrixma phailaeko chha ra yasama ATP sansleshan ko lagi utprerak siteharu chhan.
   Expected: F1 कम्पोनेन्ट माइटोकोन्ड्रियाल म्याट्रिक्समा फैलिएको छ र यसमा एटीपी संश्लेषणको लागि उत्प्रेरक साइटहरू छन्।
   Got:      F1 कम्पोनेन्ट माइटोकोन्ड्रियाल म्याट्रिक्समा फैलिएको छ र यसमा ATP संश्लेषणको लागि उत्प्रेरक साइटहरू छन्।
-----------------------------------------
-[611] Roman: yo ghumaaule ADP ra ajaibik phosphate lai eksath bandhna aawashyak parne mechanical urja pradan gardachha, ATP banaunchha.
-  Expected: यो घुमाउले ADP र अजैविक फस्फेटलाई एकसाथ बाँध्न आवश्यक पर्ने मेकानिकल ऊर्जा प्रदान गर्दछ, ATP बनाउँछ।
-  Got:      यो घुमाउले ADP र अजैविक फस्फेटलाई एकसाथ बाँध्न आवश्यक पार्ने मेकानिकल ऊर्जा प्रदान गर्दछ, ATP बनाउँछ।
 ----------------------------------------
 [612] Roman: yo prakriyalaai chemiosmosis bhanninchha, jhillima aayanharu (proton) ko prasar ma rasayanik bandhan gathan (ATP sansleshan) ko yugman.
   Expected: यो प्रक्रियालाई केमिओस्मोसिस भनिन्छ, झिल्लीमा आयनहरू (प्रोटोन) को प्रसारमा रासायनिक बन्धन गठन (एटीपी संश्लेषण) को युग्मन।
@@ -1610,7 +1618,7 @@ Accuracy: 462/935 = 49.41%
 ----------------------------------------
 [785] Roman: Jaba protonharu tiharuko electrochemical gradient tala pravah hunchhan, antarjhillispas bata Fo channel hundai mitochondrial matrixma farkinchhan, yasle ek torque srijana gardachha, Fo subunitlai ghumna badhya parchha.
   Expected: जब प्रोटोनहरू तिनीहरूको इलेक्ट्रोकेमिकल ग्रेडियन्ट तल प्रवाह हुन्छन्, अन्तरझिल्ली स्पेसबाट Fo च्यानल हुँदै माइटोकोन्ड्रियाल म्याट्रिक्समा फर्किन्छन्, यसले एक टोर्क सिर्जना गर्दछ, Fo सब्युनिटलाई घुम्न बाध्य पार्छ।
-  Got:      जब प्रोटोनहरू तिनीहरूको इलेक्ट्रोकेमिकल ग्रेडियन्ट तल प्रवाह हुन्छन्, अन्तरझिल्लीबाट Fo च्यानल हुँदै माइटोकोन्ड्रियाल म्याट्रिक्समा फर्किन्छन्, यसले एक टोर्क सिर्जना गर्दछ, Fo सब्युनिटलाई घुम्न बाध्य पार्छ।
+  Got:      जब प्रोटोनहरू तिनीहरूको इलेक्ट्रोकेमिकल ग्रेडियन्ट तल प्रवाह हुन्छन्, अन्तरझिल्लीबाट Fo च्यानल हुँदै माइटोकोन्ड्रियाल म्याट्रिक्समा फर्किन्छन्, यसले एक टोर्क सिर्जना गर्दछ, Fo सब्युनिटलाई घुम्न बाध्य पर्छ।
 ----------------------------------------
 [787] Roman: F1 subunitko parikrama ADP ra akarbani phosphate lai ATP ma rupantaran garna jimmevar chha.
   Expected: F1 सब्युनिटको परिक्रमा ADP र अकार्बनिक फस्फेटलाई ATP मा रूपान्तरण गर्न जिम्मेवार छ।
@@ -1638,7 +1646,7 @@ Accuracy: 462/935 = 49.41%
 ----------------------------------------
 [797] Roman: Yo pani ullekhniya chha ki cytoplasm bata mitochondriama NADH ko yatayat lai urja input chahincha jasle samagra ATP utpadanma pani asar parchha.
   Expected: यो पनि उल्लेखनीय छ कि साइटोप्लाज्मबाट माइटोकोन्ड्रियामा NADH को यातायातलाई ऊर्जा इनपुट चाहिन्छ जसले समग्र ATP उत्पादनमा पनि असर पार्छ।
-  Got:      यो पनि उल्लेखनीय छ कि साइटोप्लाज्मबाट माइटोकोन्ड्रियामा को यतयतलाई ऊर्जा इँपुत चहिँच जसले समग्र ATP उत्पादनमा पनि असर पार्छ।
+  Got:      यो पनि उल्लेखनीय छ कि साइटोप्लाज्मबाट माइटोकोन्ड्रियामा को यतयतलाई ऊर्जा इँपुत चहिँच जसले समग्र ATP उत्पादनमा पनि असर पर्छ।
 ----------------------------------------
 [799] Roman: Oxidative phosphorylation sabai ka lagi khula prakriya hoina; yo koshikako tatkal urja aavashyaktaharusanga mel khane gari kada rupma viniyamit chha.
   Expected: अक्सिडेटिभ फोस्फोरिलेसन सबैका लागि खुला प्रक्रिया होइन; यो कोशिकाको तत्काल ऊर्जा आवश्यकताहरूसँग मेल खाने गरी कडा रूपमा विनियमित छ।
@@ -1790,7 +1798,7 @@ Accuracy: 462/935 = 49.41%
 ----------------------------------------
 [864] Roman: Ghatana kshitijko tallo bayan kinara ma euta sano lens flare dekha parchha ra ghatana kshitij ko biparit kinara ma baigani rangako flare dekhinchha.
   Expected: घटना क्षितिजको तल्लो बायाँ किनारमा एउटा सानो लेन्स फ्लेयर देखा पर्दछ र घटना क्षितिजको विपरीत किनारमा बैजनी रंगको फ्लेयर देखिन्छ।
-  Got:      घटना क्षितिजको तल्लो बायाँ किनारा मा एउटा सानो लेन्स फ्लेयर देखा पार्छ र घटना क्षितिजको विपरित किनारा मा बैजनी रंगको फ्लेयर देखिन्छ।
+  Got:      घटना क्षितिजको तल्लो बायाँ किनारा मा एउटा सानो लेन्स फ्लेयर देखा पर्छ र घटना क्षितिजको विपरित किनारा मा बैजनी रंगको फ्लेयर देखिन्छ।
 ----------------------------------------
 [872] Roman: Yo bhautik sataha hoina, tara baru space-time ko kshetra ho jahanbata bhagne gati prakashko gatibhanda badhi hunchha.
   Expected: यो भौतिक सतह होइन, तर बरु स्पेस-टाइमको क्षेत्र हो जहाँबाट भाग्ने गति प्रकाशको गतिभन्दा बढी हुन्छ।
@@ -1840,6 +1848,10 @@ Accuracy: 462/935 = 49.41%
   Expected: * ब्रह्माण्डीय इन्जिनहरू: ब्ल्याक होलहरू, तिनीहरूका एक्रेशन डिस्कहरू र जेटहरूका साथ, शक्तिशाली ब्रह्माण्डीय इन्जिनको रूपमा कार्य गर्न सक्छन्, ब्रह्माण्डमा ठूलो मात्रामा ऊर्जा जारी गर्दछ।
   Got:      * ब्रह्माण्डीय इन्जिनहरू: ब्ल्याक होलहरू, तिनीहरूका एक्रेशन डिस्कहरू र जेटहरूका साथ साथ, शक्तिशाली ब्रह्माण्डीय इन्जिनको रूपमा कार्य गर्न सक्छन्, ब्रह्माण्डमा ठूलो मात्रामा ऊर्जा जारी गर्दछ।
 ----------------------------------------
+[903] Roman: Yi prakriyaharule aakashgangaharuko gatishilta ra brahmandma padarthako vitranlai prabhav parchha.
+  Expected: यी प्रक्रियाहरूले आकाशगंगाहरूको गतिशीलता र ब्रह्माण्डमा पदार्थको वितरणलाई प्रभाव पार्छ।
+  Got:      यी प्रक्रियाहरूले आकाशगंगाहरूको गतिशीलता र ब्रह्माण्डमा पदार्थको वितरणलाई प्रभाव पर्छ।
+----------------------------------------
 [904] Roman: Video kalo prusthbhumi ma seto pathabata suru hunchha, jasama bhanieko chha: "14 February 1990 ma Voyager 1 le aphno camera ghumaera prithviko 6 arba kilometer tadhabata photo khichheko thiyo. Carl Saganle yasako barema 'Pale Blue Dot' (1994) ma lekheka thie".
   Expected: भिडियो कालो पृष्ठभूमिमा सेतो पाठबाट सुरु हुन्छ, जसमा भनिएको छ: "१४ फेब्रुअरी १९९० मा भोयाजर १ ले आफ्नो क्यामेरा घुमाएर पृथ्वीको ६ अर्ब किलोमिटर टाढाबाट फोटो खिचेको थियो। कार्ल सागनले यसको बारेमा ‘पेल ब्लू डट’ (१९९४) मा लेखेका थिए।”
   Got:      भिडियो कालो पृष्ठभूमिमा सेतो पथबाट सुरु हुन्छ, जसमा भनिएको छ: "१४ फेब्रुअरी १९९० मा १.ले आफ्नो क्यामेरा घुमएर पृथ्वीको ६ अर्ब किलोमिटर टाढाबाट फोटो खिछेको थियो। कार्ल सागनले यसको बारेमा 'पेल ब्लू डट' (1994) मा लेखेका थिए"।
@@ -1862,11 +1874,11 @@ Accuracy: 462/935 = 49.41%
 ----------------------------------------
 [914] Roman: Unko tarka thiyo ki yo chhabi yasto hunupardachha jasama hamile yo mahasus garna hernu parchha ki hamile aphno bhalaiko lagi aphno grahako kadar ra raksha garnupardachha.
   Expected: उनको तर्क थियो कि यो छवि यस्तो हुनुपर्दछ जसमा हामीले यो महसुस गर्न हेर्नुपर्छ कि हामीले आफ्नो भलाईको लागि आफ्नो ग्रहको कदर र रक्षा गर्नुपर्दछ।
-  Got:      उनको तर्क थियो कि यो छविहरू यस्तो हुनुपर्दछ जसमा हामीले यो महसुस गर्न हेर्नु पार्छ कि हामीले आफ्नो भलाइको लागि आफ्नो ग्रहको यसको र रक्षा गर्नुपर्दछ।
+  Got:      उनको तर्क थियो कि यो छविहरू यस्तो हुनुपर्दछ जसमा हामीले यो महसुस गर्न हेर्नु पर्छ कि हामीले आफ्नो भलाइको लागि आफ्नो ग्रहको यसको र रक्षा गर्नुपर्दछ।
 ----------------------------------------
 [918] Roman: Yasle jod dinchha ki, jahansamma hamilai thaha chha, hamro graha jiwan bhayeko ek matra thau ho ra tyaskaran, yasako kadar garnu parchha.
   Expected: यसले जोड दिन्छ कि, जहाँसम्म हामीलाई थाहा छ, हाम्रो ग्रह जीवन भएको एक मात्र ठाउँ हो र त्यसकारण, यसको कदर गर्नुपर्छ।
-  Got:      यसले जोड दिन्छ कि, कि हामीलाई थाहा छ, हाम्रो ग्रह जीवन भएको एक मात्र ठाउँ हो र त्यसकारण, यसको यसको गर्नु पार्छ।
+  Got:      यसले जोड दिन्छ कि, कि हामीलाई थाहा छ, हाम्रो ग्रह जीवन भएको एक मात्र ठाउँ हो र त्यसकारण, यसको यसको गर्नु पर्छ।
 ----------------------------------------
 [922] Roman: Unale yo chhabi le hamisanga bhayeko ek matra sansar hamro aphnai ho bhanne praman ko rupma dekhe.
   Expected: उनले यो छविले हामीसँग भएको एक मात्र संसार हाम्रो आफ्नै हो भन्ने प्रमाणको रूपमा देखे।
