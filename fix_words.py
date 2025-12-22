@@ -6,7 +6,11 @@ import json
 import os
 import sys
 import re
+import io
 from collections import Counter
+
+# Fix encoding for Windows
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(script_dir, 'nepali_romanizer', 'src'))
