@@ -2,13 +2,12 @@
 Robust Nepali Roman to Devanagari Transliterator.
 """
 
-from typing import List, Tuple, Dict, Optional
+from typing import List, Tuple, Dict, Optional, Union
 
 # =============================================================================
 # DATASETS
 # =============================================================================
 
-# Common words that violate strict phonetic rules or have standard spellings
 LEARNED_WORDS = {
     'ma': 'म',
     'ta': 'त',
@@ -50,7 +49,7 @@ LEARNED_WORDS = {
     'yo': 'यो',
     'tyo': 'त्यो',
     'yi': 'यी',
-    'tya': 'त्या', # maybe typo
+    'tya': 'त्या',
     'tyahi': 'त्यही',
     'uha': 'उहाँ',
     'uhaan': 'उहाँ',
@@ -68,15 +67,14 @@ LEARNED_WORDS = {
     'ko': 'को',
     'le': 'ले',
     'lai': 'लाई',
-    'ma': 'म', # Default to Pronoun 'ma'. Suffix 'ma' handled separately.
     'ra': 'र',
     'tara': 'तर',
     'ani': 'अनि',
-    'ki': 'कि', # conjunction
+    'ki': 'कि',
     'yadi': 'यदि',
     'bhanda': 'भन्दा',
     'sanga': 'सँग',
-    'baarema': 'बारेमा', # about
+    'baarema': 'बारेमा',
     'barema': 'बारेमा',
     
     # Common Nouns/Adverbs
@@ -104,9 +102,9 @@ LEARNED_WORDS = {
     'bus': 'बस',
     'station': 'स्टेशन',
     'ticket': 'टिकट',
-    'passport': 'राहदानी', # Or passport?
+    'passport': 'राहदानी', 
     'video': 'भिडियो',
-    'youtube': 'युट्युब', # standardized
+    'youtube': 'युट्युब', 
     'facebook': 'फेसबुक',
     'internet': 'इन्टरनेट',
     'online': 'अनलाइन',
@@ -116,21 +114,33 @@ LEARNED_WORDS = {
     'doctor': 'डाक्टर',
     'nurse': 'नर्स',
     'hospital': 'अस्पताल',
-    'restaurant': 'रेष्टुरेन्ट', # or रेस्टुरेन्ट
+    'restaurant': 'रेष्टुरेन्ट',
     'dollar': 'डलर',
+    
+    # Specific corrections
+    'tarkari': 'तरकारी',
+    'bazar': 'बजार',
+    'bajaar': 'बजार',
+    'paine': 'पाइने',
+    'khojdai': 'खोज्दै',
+    'pathayeko': 'पठाएको',
+    'aayeko': 'आएको',
+    'gayeko': 'गएको',
+    'bhayaeko': 'भएको',
 }
 
 # Postpositions to JOIN if found after a word (space separated)
 JOINABLE_POSTPOSITIONS = {
     'ma', 'ko', 'le', 'lai', 'bata', 'sanga', 'dekhi', 'kai', 'bhanda', 'haru',
-    'chha', 'chhu', 'chhan', 'chhau', 'hunchha', 'thiyo', 'thiye', # Verb endings sometimes separated?
-    'bhane', # kina bhane -> kinabhane
+    'chha', 'chhu', 'chhan', 'chhau', 'hunchha', 'thiyo', 'thiye',
+    'bhane', 
 }
 
-# Words that should NOT join with following postpositions (usually)
 NO_JOIN_PREV = {
     'ra', 'tara', 'ani', 'ki', 'ke', 'ho', 'chha', 'chhan', 'thiyo', 'ma'
 }
+
+CHHA_GROUP = {'chha', 'chhu', 'chhan', 'chhau', 'hunchha', 'thiyo', 'thiye'}
 
 # =============================================================================
 # MAPPINGS
@@ -143,7 +153,8 @@ CONSONANT_MAP = {
     'p': 'प', 'ph': 'फ', 'b': 'ब', 'bh': 'भ', 'm': 'म',
     'y': 'य', 'r': 'र', 'l': 'ल', 'w': 'व', 'v': 'व',
     's': 'स', 'sh': 'श', 'shh': 'ष', 'h': 'ह',
-    'gy': 'ज्ञ', 'tra': 'त्र', 'ksha': 'क्ष', 'kshya': 'क्ष्य'
+    'gy': 'ज्ञ', 'tra': 'त्र', 'ksha': 'क्ष', 'kshya': 'क्ष्य',
+    'f': 'फ', 'z': 'ज', 'c': 'क', 'q': 'क', 'x': 'क्स'
 }
 
 VOWEL_INDEPENDENT = {
@@ -151,13 +162,13 @@ VOWEL_INDEPENDENT = {
     'i': 'इ', 'ee': 'ई',
     'u': 'उ', 'oo': 'ऊ',
     'e': 'ए', 'ai': 'ऐ',
-    'o': 'ओ', 'au': 'औ',
+    'o': 'ओ', 'au': 'ौ',
     'ri': 'ऋ',
 }
 
 VOWEL_SIGNS = {
     'aa': 'ा',
-    'a': '', # Inherent vowel - valid matra (empty)
+    'a': '',
     'i': 'ि', 'ee': 'ी',
     'u': 'ु', 'oo': 'ू',
     'e': 'े', 'ai': 'ै',
@@ -165,29 +176,43 @@ VOWEL_SIGNS = {
     'ri': 'ृ',
 }
 
-# Suffix Mappings for `transliterate_word_smart`
+INDEP_TO_MATRA = {
+    'अ': '',   'आ': 'ा',
+    'इ': 'ि',   'ई': 'ी',
+    'उ': 'ु',   'ऊ': 'ू',
+    'ए': 'े',   'ऐ': 'ै',
+    'ओ': 'ो',   'औ': 'ौ',
+    'ऋ': 'ृ'
+}
+
+# Suffix Mappings: suffix -> (devanagari, mode)
 SUFFIXES = {
-    'ma': 'मा',
-    'ko': 'को',
-    'ka': 'का',
-    'ki': 'की',
-    'le': 'ले',
-    'lai': 'लाई',
-    'bata': 'बाट',
-    'sanga': 'सँग',
-    'dekhi': 'देखि',
-    'bhanda': 'भन्दा',
-    'haru': 'हरू',
-    'chha': 'छ',
-    'chhu': 'छु',
-    'chhan': 'छन्',
-    'dai': 'दै',
-    'eko': 'एको',
-    'iera': 'िएर',
-    'era': 'एर',
-    'nu': 'नु',
-    'ne': 'ने',
-    'na': 'न',
+    'ma': ('मा', False),
+    'ko': ('को', False),
+    'ka': ('का', False),
+    'ki': ('की', False),
+    'le': ('ले', False),
+    'lai': ('लाई', False),
+    'bata': ('बाट', False),
+    'sanga': ('सँग', False),
+    'dekhi': ('देखि', False),
+    'bhanda': ('भन्दा', False),
+    'haru': ('हरू', False),
+    
+    # Verb Endings
+    'chha': ('छ', True),
+    'chhu': ('छु', True),
+    'chhan': ('छन्', True),
+    'chhau': ('छौ', True),
+    'dai': ('दै', True),
+    'nu': ('नु', True),
+    'ne': ('ने', True),
+    'na': ('न', True),
+    
+    # Vowel Starting Verbs
+    'eko': ('एको', 'VOWEL'),
+    'iera': ('िएर', 'VOWEL'),
+    'era': ('एर', 'VOWEL'),
 }
 
 NUMERALS = {
@@ -205,9 +230,12 @@ PUNCTUATION = {
 SORTED_CONSONANTS = sorted(CONSONANT_MAP.keys(), key=len, reverse=True)
 SORTED_SUFFIXES = sorted(SUFFIXES.keys(), key=len, reverse=True)
 
+
 # =============================================================================
 # LOGIC
 # =============================================================================
+
+DEVANAGARI_CONSONANTS = set("कखगघङचछजझञटठडढणतथदधनपफबभमयरलवशषहळक्षज्ञ")
 
 class Tokenizer:
     @staticmethod
@@ -232,11 +260,8 @@ def transliterate_phonetic(word: str) -> str:
     """Core phonetic engine."""
     if not word: return ""
     
-    # Capitalized Acronyms (Simple check)
     if word.isupper() and len(word) > 1:
-        if word == "UK": return "UK" # Exceptions...
-        # return word # Retain Roman for Acronyms? or Transliterate?
-        # Dataset mix. Let's try to map if simple.
+        if word == "UK": return "UK"
     
     res = []
     i = 0
@@ -254,7 +279,6 @@ def transliterate_phonetic(word: str) -> str:
                 break
         
         if match:
-            # Consonant Logic
             res.append(match_val)
             i += len(match)
             
@@ -262,8 +286,6 @@ def transliterate_phonetic(word: str) -> str:
             vmatch = None
             vmatch_matra = None
             
-            # Lookahead for matra
-            # Check multi-char vowels first (aa, ai...)
             for v in ['aa', 'ai', 'au', 'ee', 'oo', 'ri']:
                  if word_lower.startswith(v, i):
                      vmatch = v
@@ -271,13 +293,8 @@ def transliterate_phonetic(word: str) -> str:
                      break
             
             if not vmatch:
-                 # Check single char vowels
                  c = word_lower[i] if i < length else ''
-                 if c in VOWEL_SIGNS: # a, i, u, e, o
-                      # 'a' handling: no matra (inherent schwa), unless it's explicitly 'a'
-                      # BUT 'a' key logic:
-                      # If vowel is 'a', it adds NOTHING (Inherent).
-                      # IF vowel is NOT 'a', adds matra.
+                 if c in VOWEL_SIGNS: 
                       if c == 'a':
                           vmatch = 'a'
                           vmatch_matra = '' # Inherent
@@ -289,52 +306,25 @@ def transliterate_phonetic(word: str) -> str:
                 res.append(vmatch_matra)
                 i += len(vmatch)
                 
-                # Check Nasal 'n' or 'm' after vowel
-                # e.g. 'aa' + 'n' -> Chandrabindu?
-                # Heuristics:
-                # 'aan' at end of word -> 'ाँ' (usually).
-                # 'in' at end of word -> 'िँ' (usually).
-                # 'aun' -> 'ौँ'.
+                # Check Nasal 'n'
                 if i < length and word_lower[i] == 'n':
-                   # Check if 'n' is followed by vowel -> then it is 'na' syllable, not nasal.
-                   # Check if 'n' is followed by consonant -> could be Anusvara or Half-N.
-                   # Check if 'n' is End of Word -> Chandrabindu common for 'aan', 'in'.
-                   
                    is_end = (i + 1 == length)
                    next_char_is_vowel = (i + 1 < length) and (word_lower[i+1] in 'aeiou')
                    
                    if not next_char_is_vowel:
-                        # Candidate for nasal
-                        # If 'aa' + 'n' (End): 'kahaan' -> 'कहाँ'.
                         if vmatch == 'aa' and is_end:
-                            # Replace last char (matra 'ा') with 'ाँ'?
-                            # No, append Chandrabindu.
-                            # 'ा' + 'ँ' = 'ाँ'.
                             res.append('ँ') 
                             i += 1
-                        # If 'au' + 'n' (End): 'aau' -> 'आउ' + 'n'. 'chhaun' -> 'छौं'.
-                        elif vmatch == 'au' and is_end:
-                             # 'au' matra is 'ौ'. Add anusvara 'ं' or chandrabindu?
-                             # chhaun -> छौं (dot). 'aun' -> ौँ.
-                             # Standard Nepali: plural often 'an' -> 'न्'.
-                             # suffix 'chhau' (you are). 'chhaun' (they/we?).
-                             pass # Leave as 'n' (half) for now to be safe: 'न्'
-                        
-                        # General 'n' -> 'न्' (Half Na).
-                        # Let the next loop handle 'n' as consonant if we don't consume it here.
                         pass
                 
             else:
-                # No vowel follows (Schwa or Halant)
-                # If end of word -> Keep Full (Implicit Schwa).
-                # If middle of word -> Add Halant (Conjunct).
+                # No vowel follows (Schwa)
+                # Middle of word -> Halant
                 if i < length:
-                    res.append('\u094D') # Halant
+                    res.append('\u094D')
             continue
 
         # 2. Independent Vowels
-        # Only if NOT preceded by consonant (already handled above).
-        # So this runs if we are at start of word, or after another vowel.
         vmatch = None
         vmatch_val = None
         for v in ['aa', 'ai', 'au', 'ee', 'oo', 'ri']:
@@ -343,7 +333,6 @@ def transliterate_phonetic(word: str) -> str:
                  vmatch_val = VOWEL_INDEPENDENT[v]
                  break
         if not vmatch:
-             # Single char
              c = word_lower[i]
              if c in VOWEL_INDEPENDENT:
                  vmatch = c
@@ -370,63 +359,60 @@ def transliterate_phonetic(word: str) -> str:
 def transliterate_word_smart(word: str) -> str:
     word_lower = word.lower()
     
-    # 1. Learned/Common Dictionary
     if word_lower in LEARNED_WORDS:
         return LEARNED_WORDS[word_lower]
         
-    # 2. Suffix Handling
     best_suffix = None
     for suffix in SORTED_SUFFIXES:
         if word_lower.endswith(suffix):
             stem = word[:-len(suffix)]
-            if len(stem) >= 2: # Min stem length
+            if len(stem) >= 2:
                 best_suffix = suffix
                 break
     
     if best_suffix:
-        suffix_dev = SUFFIXES[best_suffix]
+        suffix_info = SUFFIXES[best_suffix]
+        suffix_dev = suffix_info[0]
+        mode = suffix_info[1]
+        
         stem = word[:-len(best_suffix)]
-        
-        # Check if stem is learned
         stem_lower = stem.lower()
-        if stem_lower in LEARNED_WORDS:
-             # Special join rules?
-             # 'uniharu' -> 'uni' (learned?) + 'haru'.
-             # dictionary has 'uniharu'.
-             # if stem is 'ghar' -> 'घर'.
-             # suffix 'ma' -> 'मा'.
-             # 'gharma' -> 'घरमा'.
-             return LEARNED_WORDS[stem_lower] + suffix_dev
         
-        # Else Phonetic Stem
-        return transliterate_phonetic(stem) + suffix_dev
+        if stem_lower in LEARNED_WORDS:
+             stem_val = LEARNED_WORDS[stem_lower]
+        else:
+             stem_val = transliterate_phonetic(stem)
+             
+        # Joining Logic
+        if mode == 'VOWEL':
+             if stem_val:
+                 last_char = stem_val[-1]
+                 if last_char in DEVANAGARI_CONSONANTS:
+                     indep_v = suffix_dev[0]
+                     if indep_v in INDEP_TO_MATRA:
+                         matra = INDEP_TO_MATRA[indep_v]
+                         suffix_use = matra + suffix_dev[1:]
+                         return stem_val + suffix_use
+             
+             return stem_val + suffix_dev
+             
+        elif mode == True: # Force Halant
+            if stem_val:
+                 last_char = stem_val[-1]
+                 if last_char in DEVANAGARI_CONSONANTS:
+                      stem_val += '\u094D'
+        
+        return stem_val + suffix_dev
 
-    # 3. Post-Processing Rules (word-final i/u)
-    # Apply to purely phonetic result
+    # Post-Processing
     res = transliterate_phonetic(word)
-    
-    # Heuristic: Word ending in 'i' usually 'ी', 'u' usually 'ू'.
     if word_lower.endswith('i') and not word_lower.endswith('ai'): 
-        # e.g. 'pani' -> 'पनि' (also) - EXCEPT 'pani' (water) is 'पानी'.
-        # ambiguous. 'pni' -> 'पनि'.
-        # dataset: 'kehi' -> 'केही'.
-        # 'nepali' -> 'नेपाली'. (ee)
-        # Convert final 'ि' to 'ी'?
         if res.endswith('ि'):
             res = res[:-1] + 'ी'
-            
-    if word_lower.endswith('u') and not word_lower.endswith('au'):
-        # 'aafu' -> 'आफू'.
-        # 'siknu' -> 'सिक्नु' (verb - short u).
-        # Verbs usually short u. Nouns long?
-        # Safe to leave short u for verbs, which are common.
-        pass
-
     return res
 
 def transliterate(text: str) -> str:
     if not text: return ""
-    
     tokens = Tokenizer.tokenize(text)
     result = []
     i = 0
@@ -437,48 +423,33 @@ def transliterate(text: str) -> str:
         
         if type_a == 'word':
             # Lookahead for Join
-            # Allow joining multiple times? 'ghar' + 'ma' + 'le' (ungrammatical but possible structure)
-            
-            # Check Next Token (should be space/sep) and NextNext (word)
-            has_joined = False
-            
             if i + 2 < length:
-                type_b, val_b = tokens[i+1] # Separator
-                type_c, val_c = tokens[i+2] # Next Word
-                
-                # Check if we should join val_c to val_a
-                # Criteria: val_b is space
-                # val_c is in JOINABLE_POSTPOSITIONS
-                # val_a is NOT in NO_JOIN_PREV
+                type_b, val_b = tokens[i+1]
+                type_c, val_c = tokens[i+2]
                 
                 if val_b == ' ' and type_c == 'word':
-                     if val_c.lower() in JOINABLE_POSTPOSITIONS:
-                         if val_a.lower() not in NO_JOIN_PREV:
-                             # DO JOIN
-                             # Construct combined word
-                             # But we might want to lookup `val_a` individually?
-                             # Better: Combine string "val_a val_c" -> "val_aval_c" and process?
-                             # Or process val_a, process val_c (as suffix), and concat?
-                             # "ghar" "ma" -> "ghar" + "ma" -> "घर" + "मा" -> "घरमा".
-                             # "kina" "bhane" -> "kinabhane" -> dictionary "किनभने".
-                             
-                             # Try combined lookup first
+                     c_lower = val_c.lower()
+                     if c_lower in JOINABLE_POSTPOSITIONS:
+                         should_join = True
+                         a_lower = val_a.lower()
+                         
+                         if a_lower in NO_JOIN_PREV:
+                             should_join = False
+                         
+                         if c_lower in CHHA_GROUP:
+                             if a_lower.endswith(('a', 'e', 'i', 'o', 'u')) and not a_lower.endswith('dai'):
+                                  should_join = False
+                         
+                         if should_join:
                              combined_raw = val_a + val_c
                              combined_res = transliterate_word_smart(combined_raw)
-                             
-                             # If combined result looks like just phonetic concat, maybe better to do safe join?
-                             # Actually `transliterate_word_smart` handles suffixes.
-                             
                              result.append(combined_res)
-                             i += 3 # Skip a, b, c
+                             i += 3 
                              continue
             
-            # Normal Word
             result.append(transliterate_word_smart(val_a))
             i += 1
-            
         else:
-            # Separator
             if val_a in PUNCTUATION:
                 result.append(PUNCTUATION[val_a])
             else:
